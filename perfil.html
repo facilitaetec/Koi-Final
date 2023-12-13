@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Perfil</title>
+    <link rel="icon" href="img/koilogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        button a {
+            color: #FCF3E4;
+        }
+
+        section {
+            background-color: #fcf3e4;
+            width: 1200px;
+            margin: 0 auto; /* Centralizar a seção */
+            font-family: Arial;
+        }
+
+        body {
+            background-color: #FCF3E4;;
+            text-align: center;
+        }
+
+        .navbar {
+            background: #d74a05;
+            color: #fcf3e4;
+            font-weight: bold;
+        }
+       
+
+        #koilogonavbar {
+            width: 10%;
+            height: 45px;
+            float: left;
+        }
+
+        #bemvindo, #bemvindo a {
+            text-decoration: none !important;
+            color:#ffffff;
+            font-size: large;
+        }
+
+        #bemvindo:hover  a {
+            background: #fcf3e4;
+            color: #d74a05!important ;
+            border-radius: 10px;
+        }
+
+        .btn {
+            font-weight: bold;
+            font-size: large;
+        }
+        .btn:hover {
+            background: #fcf3e4;
+            color: #d74a05;
+        }
+
+        #btn4 {
+            width: 18%;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: #d74a05;
+        }
+
+
+        #btn4 a{
+            color: white;
+        }
+
+        #btn4 a:hover {
+            background: #fcf3e4;
+            color: #d74a05;
+            border-radius: 10px;
+        }
+
+        #btn3 {
+            width: 18%;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: #d74a05;
+        }
+
+
+        #btn3 a{
+            color: white;
+        }
+
+        #btn3 a:hover {
+            background: #fcf3e4;
+            color: #d74a05;
+            border-radius: 10px;
+        }
+
+        #cato {
+            width: 25%;
+            margin-top: 1%;
+            margin-left: 70px;
+            border-radius: 50px;
+            display: inline-block; /* Alterado para inline-block */
+        }
+
+        .comeco {
+            display: flex;
+        }
+
+        .comeco p {
+            font-size: 200%;
+            color: rgb(25, 6, 0);
+            margin-left: 4%;
+            text-shadow: 100%;
+        }
+
+        .meio {
+            background: #d74a05;
+            color: #fcf3e4;
+        }
+        #dados{
+            margin-top: 1px !important;
+
+        }
+
+        footer {
+            background: #d74a05;
+            color: #fcf3e4;
+            display: flex;
+            justify-content: space-around; /* Distribui os itens igualmente */
+            align-items: center; /* Alinha verticalmente ao centro */
+            text-align: center !important;
+        }
+
+        footer p {
+            text-decoration: none !important;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none !important;
+            
+            margin-right: 20px;
+            
+        }
+
+        .foto {
+            margin-top: 3%;
+            margin-bottom: 10%;
+        }
+        .classificacao {
+            background-color: #FFE2B1;
+            width: 584px;
+            height: 494px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            margin-left: 30%;
+        }
+        .botao {
+            background-color: #d74a05;
+            color: #fcf3e4;
+            border: none;
+            margin-left: 2%;
+            margin-right: 2%;
+            display: inline-flex;
+            
+            
+        }
+        .botao :hover{
+            background-color: white;
+            color: #d74a05;
+            border-radius: 10px;
+        }
+        .botao a{
+            color: #fcf3e4;
+        }
+        .nome {
+            width: 680px;
+            height: 51px;
+            flex-shrink: 0;
+            color: #1C1C1C;
+            text-align: center;
+            font-family: Karla;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-right: 40%;
+        }
+        .local {
+            color: #000;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: #000;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .titulo {
+            color: #000;
+            font-family: Inter;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            width: 213px;
+            height: 46px;
+            flex-shrink: 0;
+        }
+
+
+        @media(max-width: 1200px) {
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+<header>
+        <div class="navbar" style="gap: 10px;">
+            <button class="botao" style="margin-top: 2%;margin-left: 4%;"><a href="index.html"><b>Início</b></a></button>
+            <img src="img/koilogo.png" style="width: 6%;margin-left: -2%;height:58%;display: inline-flex;margin-top: 1%;">
+            <div style="width: 50%; display: inline-flex;gap: 10%;margin-top: 2%;margin-left: 30%;">
+                <button class="botao"><a href="sobre.html"><b>Serviços</b></a></button>
+                <button class="botao"><a href="cadastro.php"><b>Sobre</a></b></button>
+                <button class="botao"><a href="login.html"><b>Alterar perfil</b></a></button>
+            </div>
+            
+        </div>
+    
+</header>
+    
+
+    <!-- header -->
+
+    <!-- corpo -->
+
+
+    
+
+    <div class="foto">
+
+        <img src="img/makedit.jpg" style="border-radius: 10px;">
+       
+
+    </div>
+
+    <span>
+        <p class="nome" style="margin-left: -5%;">
+            Andressa Amarão
+        </p>
+        <p style="margin-right: 71%;margin-top: 1%;">
+            Membro desde de 14 / 02 / 2023
+        </p>
+    </span>
+
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1182" height="5" viewBox="0 0 1182 5" fill="none">
+            <path d="M0.5 2.5H1182" stroke="#D74A05" stroke-width="4"/>
+          </svg>
+    </span>
+    <br>
+    <span class="local" style="margin-left: -63%;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="33" viewBox="0 0 25 33" fill="none">
+            <path d="M11.2154 32.3495C1.75586 19.0853 0 17.724 0 12.8492C0 6.17185 5.59642 0.758789 12.5 0.758789C19.4036 0.758789 25 6.17185 25 12.8492C25 17.724 23.2441 19.0853 13.7846 32.3495C13.1639 33.2169 11.8361 33.2168 11.2154 32.3495ZM12.5 17.8869C15.3765 17.8869 17.7083 15.6315 17.7083 12.8492C17.7083 10.067 15.3765 7.81155 12.5 7.81155C9.6235 7.81155 7.29167 10.067 7.29167 12.8492C7.29167 15.6315 9.6235 17.8869 12.5 17.8869Z" fill="black"/>
+          </svg>
+        Itanhaém - Jardim Suarão / SP
+    </span>
+
+    <div class="classificacao" style="margin-top: 4%;padding: 1%;">
+
+        <p class="titulo" style="margin-left: 30%;">
+            Classificação
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 45 50" fill="none">
+            <path d="M34.7919 49.43C34.2572 49.43 33.7251 49.2416 33.2672 48.8662L22.5003 40.0011L11.7334 48.8662C10.8162 49.6199 9.58531 49.6199 8.6734 48.8541C7.76149 48.0958 7.37766 46.7495 7.71913 45.5201L11.7347 30.6405L1.06444 22.0079C0.157821 21.2405 -0.219385 19.8911 0.127379 18.6603C0.476791 17.4325 1.47208 16.5982 2.59708 16.5891L15.8125 16.5663L20.02 2.05597C20.3747 0.826644 21.374 0 22.5003 0C23.6266 0 24.6259 0.828164 24.9819 2.05597L29.1179 16.5663L42.4009 16.5891C43.5298 16.5982 44.5264 17.434 44.8719 18.6603C45.22 19.8911 44.8428 21.2405 43.9348 22.0079L33.2645 30.6405L37.2801 45.5201C37.6242 46.7495 37.2365 48.0958 36.3272 48.8541C35.8679 49.24 35.3306 49.43 34.7919 49.43Z" fill="#D74A05"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 45 50" fill="none">
+            <path d="M34.7919 49.43C34.2572 49.43 33.7251 49.2416 33.2672 48.8662L22.5003 40.0011L11.7334 48.8662C10.8162 49.6199 9.58531 49.6199 8.6734 48.8541C7.76149 48.0958 7.37766 46.7495 7.71913 45.5201L11.7347 30.6405L1.06444 22.0079C0.157821 21.2405 -0.219385 19.8911 0.127379 18.6603C0.476791 17.4325 1.47208 16.5982 2.59708 16.5891L15.8125 16.5663L20.02 2.05597C20.3747 0.826644 21.374 0 22.5003 0C23.6266 0 24.6259 0.828164 24.9819 2.05597L29.1179 16.5663L42.4009 16.5891C43.5298 16.5982 44.5264 17.434 44.8719 18.6603C45.22 19.8911 44.8428 21.2405 43.9348 22.0079L33.2645 30.6405L37.2801 45.5201C37.6242 46.7495 37.2365 48.0958 36.3272 48.8541C35.8679 49.24 35.3306 49.43 34.7919 49.43Z" fill="#D74A05"/>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 45 50" fill="none">
+            <path d="M34.7919 49.43C34.2572 49.43 33.7251 49.2416 33.2672 48.8662L22.5003 40.0011L11.7334 48.8662C10.8162 49.6199 9.58531 49.6199 8.6734 48.8541C7.76149 48.0958 7.37766 46.7495 7.71913 45.5201L11.7347 30.6405L1.06444 22.0079C0.157821 21.2405 -0.219385 19.8911 0.127379 18.6603C0.476791 17.4325 1.47208 16.5982 2.59708 16.5891L15.8125 16.5663L20.02 2.05597C20.3747 0.826644 21.374 0 22.5003 0C23.6266 0 24.6259 0.828164 24.9819 2.05597L29.1179 16.5663L42.4009 16.5891C43.5298 16.5982 44.5264 17.434 44.8719 18.6603C45.22 19.8911 44.8428 21.2405 43.9348 22.0079L33.2645 30.6405L37.2801 45.5201C37.6242 46.7495 37.2365 48.0958 36.3272 48.8541C35.8679 49.24 35.3306 49.43 34.7919 49.43Z" fill="#D74A05"/>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 45 50" fill="none">
+            <path d="M34.7919 49.43C34.2572 49.43 33.7251 49.2416 33.2672 48.8662L22.5003 40.0011L11.7334 48.8662C10.8162 49.6199 9.58531 49.6199 8.6734 48.8541C7.76149 48.0958 7.37766 46.7495 7.71913 45.5201L11.7347 30.6405L1.06444 22.0079C0.157821 21.2405 -0.219385 19.8911 0.127379 18.6603C0.476791 17.4325 1.47208 16.5982 2.59708 16.5891L15.8125 16.5663L20.02 2.05597C20.3747 0.826644 21.374 0 22.5003 0C23.6266 0 24.6259 0.828164 24.9819 2.05597L29.1179 16.5663L42.4009 16.5891C43.5298 16.5982 44.5264 17.434 44.8719 18.6603C45.22 19.8911 44.8428 21.2405 43.9348 22.0079L33.2645 30.6405L37.2801 45.5201C37.6242 46.7495 37.2365 48.0958 36.3272 48.8541C35.8679 49.24 35.3306 49.43 34.7919 49.43Z" fill="#D74A05"/>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" viewBox="0 0 45 50" fill="none">
+            <path d="M34.7919 49.43C34.2572 49.43 33.7251 49.2416 33.2672 48.8662L22.5003 40.0011L11.7334 48.8662C10.8162 49.6199 9.58531 49.6199 8.6734 48.8541C7.76149 48.0958 7.37766 46.7495 7.71913 45.5201L11.7347 30.6405L1.06444 22.0079C0.157821 21.2405 -0.219385 19.8911 0.127379 18.6603C0.476791 17.4325 1.47208 16.5982 2.59708 16.5891L15.8125 16.5663L20.02 2.05597C20.3747 0.826644 21.374 0 22.5003 0C23.6266 0 24.6259 0.828164 24.9819 2.05597L29.1179 16.5663L42.4009 16.5891C43.5298 16.5982 44.5264 17.434 44.8719 18.6603C45.22 19.8911 44.8428 21.2405 43.9348 22.0079L33.2645 30.6405L37.2801 45.5201C37.6242 46.7495 37.2365 48.0958 36.3272 48.8541C35.8679 49.24 35.3306 49.43 34.7919 49.43Z" fill="#D74A05"/>
+          </svg>
+        <br>
+        <br>
+        <p>
+            Essa pessoa tem boa avaliação em nossa plataforma!
+        </p>
+
+    </div>
+
+    <div style="margin-top: 10%;">
+        <h2>SERVIÇOS</h2>
+        
+    
+    <div style="display: inline-flex;gap: 10%; width: 100%;margin-top: 8%;">
+    <section style="width: 564px;height: 213px;flex-shrink: 0;border-radius: 20px;
+    background: #FFE2B1;padding: 1%;"><b>Em aberto</b></section>
+    <section style="width: 564px;height: 213px;flex-shrink: 0;border-radius: 20px;
+    background: #FFE2B1;padding: 1%;"><b>Finalizados</b></section>
+    </div>
+
+   
+    <footer>
+        <p class="btn"><a href="contato.html">Fale conosco</a></p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <p class="btn"><a href="postar.html"> Postar serviço</a></p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <p class="btn"><a href="sobre.html"> Sobre nós</a></p>
+    </footer>
+</body>
+</html>
